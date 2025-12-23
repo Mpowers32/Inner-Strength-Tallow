@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Inner Strength Tallow - Notifications</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <header class="app-header">
+      <h1>Inner Strength Tallow</h1>
+      <div class="notification-bell">
+        <span class="bell-icon" aria-hidden="true">🔔</span>
+        <span id="bell-count" class="bell-count">0</span>
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="panel">
+        <h2>Create User</h2>
+        <form id="user-form">
+          <label>
+            Username
+            <input type="text" name="username" placeholder="sierra" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="sierra@example.com" required />
+          </label>
+          <button type="submit">Create user</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Create Card</h2>
+        <form id="card-form">
+          <label>
+            Title
+            <input type="text" name="title" placeholder="Spring campaign" required />
+          </label>
+          <label>
+            Description
+            <textarea
+              name="description"
+              placeholder="New copy review with @alex and @maria"
+              required
+            ></textarea>
+          </label>
+          <label>
+            Author User ID
+            <input type="number" name="author_id" min="1" required />
+          </label>
+          <button type="submit">Create card</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Add Comment</h2>
+        <form id="comment-form">
+          <label>
+            Card ID
+            <input type="number" name="card_id" min="1" required />
+          </label>
+          <label>
+            Comment
+            <textarea
+              name="body"
+              placeholder="Looping in @jordan for QA."
+              required
+            ></textarea>
+          </label>
+          <label>
+            Author User ID
+            <input type="number" name="author_id" min="1" required />
+          </label>
+          <button type="submit">Add comment</button>
+        </form>
+      </section>
+
+      <section class="panel">
+        <h2>Notifications</h2>
+        <label class="inline">
+          User ID
+          <input type="number" id="notifications-user-id" min="1" value="1" />
+          <button id="refresh-notifications" type="button">Refresh</button>
+        </label>
+        <ul id="notification-list" class="notifications"></ul>
+      </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

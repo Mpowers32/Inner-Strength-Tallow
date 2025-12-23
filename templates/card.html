@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ card['title'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}" />
+  </head>
+  <body>
+    <main class="card-view">
+      <a class="back-link" href="{{ url_for('index') }}">← Back to notifications</a>
+      <h1>{{ card["title"] }}</h1>
+      <p class="card-description">{{ card["description"] }}</p>
+
+      <section class="panel">
+        <h2>Comments</h2>
+        {% if comments %}
+        <ul class="comments">
+          {% for comment in comments %}
+          <li>
+            <strong>@{{ comment["username"] }}</strong>
+            <p>{{ comment["body"] }}</p>
+            <span class="timestamp">{{ comment["created_at"] }}</span>
+          </li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p>No comments yet.</p>
+        {% endif %}
+      </section>
+    </main>
+  </body>
+</html>
