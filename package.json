@@ -1,0 +1,10 @@
+{
+  "name": "inner-strength-tallow",
+  "version": "0.1.0",
+  "description": "Kanban-style board with drag and drop lists/cards.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {}
+}

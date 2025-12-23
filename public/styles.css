@@ -1,0 +1,130 @@
+:root {
+  color-scheme: light;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: #f6f7fb;
+  color: #1f2937;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  padding: 32px;
+}
+
+.app__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.app__status {
+  min-height: 20px;
+  font-size: 0.9rem;
+  color: #dc2626;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+.controls__form {
+  display: flex;
+  gap: 8px;
+}
+
+.controls__form input {
+  flex: 1;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.controls__form button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  cursor: pointer;
+}
+
+.lists {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  overflow-x: auto;
+  padding-bottom: 16px;
+}
+
+.list {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  width: 280px;
+  flex-shrink: 0;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+.list__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.list__title {
+  font-weight: 600;
+}
+
+.list__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 40px;
+}
+
+.card {
+  background: #f3f4f6;
+  padding: 10px 12px;
+  border-radius: 10px;
+  cursor: grab;
+  border: 1px solid transparent;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.list__form {
+  display: flex;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.list__form input {
+  flex: 1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+}
+
+.list__form button {
+  padding: 6px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+}
+
+.drag-ghost {
+  opacity: 0.6;
+}

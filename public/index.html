@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Strength Tallow Board</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.2/Sortable.min.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <main class="app">
+      <header class="app__header">
+        <h1 id="board-title">Board</h1>
+        <div class="app__status" id="status"></div>
+      </header>
+      <section class="controls">
+        <form id="add-list-form" class="controls__form">
+          <input type="text" name="title" placeholder="New list title" aria-label="New list title" required />
+          <button type="submit">Add List</button>
+        </form>
+      </section>
+      <section class="lists" id="lists" aria-live="polite"></section>
+    </main>
+  </body>
+</html>
