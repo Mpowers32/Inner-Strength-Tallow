@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inner Strength Boards</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1>Inner Strength Boards</h1>
+        <p>Realtime collaboration on boards, lists, and cards.</p>
+      </div>
+      <button id="new-board">New board</button>
+    </header>
+
+    <main>
+      <section class="panel">
+        <h2>Boards</h2>
+        <div id="boards" class="boards"></div>
+      </section>
+
+      <section class="panel board-detail">
+        <div class="board-header">
+          <div>
+            <h2 id="board-title">Select a board</h2>
+            <p id="board-subtitle">Choose a board to see its lists.</p>
+          </div>
+          <div class="board-actions">
+            <button id="rename-board" disabled>Rename</button>
+            <button id="delete-board" disabled>Delete</button>
+          </div>
+        </div>
+        <div id="lists" class="lists"></div>
+        <button id="new-list" disabled>Add list</button>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
