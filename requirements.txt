@@ -1,2 +1,8 @@
 Flask==3.0.3
 requests==2.32.3
+fastapi==0.115.0
+uvicorn==0.30.6
+python-jose==3.3.0
+passlib[bcrypt]==1.7.4
+sqlalchemy==2.0.34
+alembic==1.13.2

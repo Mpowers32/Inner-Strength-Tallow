@@ -1,0 +1,15 @@
+name: Deploy Staging
+
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: staging
+    steps:
+      - uses: actions/checkout@v4
+      - name: Deploy placeholder
+        run: |
+          echo "Deploying to staging environment"
+          echo "Configure this step with your deployment command"
