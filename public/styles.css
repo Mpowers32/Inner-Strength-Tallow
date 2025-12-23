@@ -1,0 +1,155 @@
+:root {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #1c212d;
+  background: #f4f6fb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  margin: 0 0 4px;
+}
+
+header p {
+  margin: 0;
+  color: #5b6474;
+}
+
+button {
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  background: #1f6feb;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 10px 30px rgba(31, 35, 41, 0.08);
+}
+
+.boards {
+  display: grid;
+  gap: 10px;
+}
+
+.board-card {
+  width: 100%;
+  text-align: left;
+  background: #eff3fb;
+  color: #1c212d;
+}
+
+.board-card.active {
+  background: #1f6feb;
+  color: #fff;
+}
+
+.board-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.board-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.board-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.list {
+  background: #f6f7fb;
+  border-radius: 12px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.list-actions button,
+.card-actions button,
+.add-card {
+  background: #e2e6ef;
+  color: #1c212d;
+  font-weight: 600;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  box-shadow: 0 6px 16px rgba(31, 35, 41, 0.06);
+}
+
+.card-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.empty {
+  color: #5b6474;
+  font-size: 0.95rem;
+}
