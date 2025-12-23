@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background: #f4f6fb;
+  color: #1f2a44;
+}
+
+.app-header {
+  background: #151c2f;
+  color: #fefefe;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.notification-bell {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.bell-icon {
+  font-size: 1.5rem;
+}
+
+.bell-count {
+  background: #ff6b6b;
+  color: white;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.panel {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(15, 26, 64, 0.08);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+label input,
+label textarea {
+  width: 100%;
+  margin-top: 0.35rem;
+  padding: 0.6rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #d8deea;
+  font-size: 0.95rem;
+}
+
+label textarea {
+  min-height: 90px;
+}
+
+button {
+  background: #4b5fff;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+button:hover {
+  background: #3647e5;
+}
+
+.notifications {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.notification-item {
+  border: 1px solid #e4e8f1;
+  border-radius: 12px;
+  padding: 0.75rem;
+  background: #fbfcff;
+}
+
+.notification-item.read {
+  opacity: 0.6;
+}
+
+.notification-item p {
+  margin: 0.5rem 0;
+}
+
+.notification-item a {
+  color: #2f3dd2;
+  font-weight: 600;
+}
+
+.badge {
+  background: #e8edff;
+  color: #2c3bbf;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 999px;
+  margin-right: 0.4rem;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-view {
+  padding: 2rem;
+}
+
+.card-description {
+  background: white;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(15, 26, 64, 0.08);
+}
+
+.comments {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.comments li {
+  background: #f7f9ff;
+  border-radius: 10px;
+  padding: 0.8rem;
+}
+
+.timestamp {
+  display: block;
+  font-size: 0.75rem;
+  color: #7a8499;
+  margin-top: 0.4rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: #2f3dd2;
+}
